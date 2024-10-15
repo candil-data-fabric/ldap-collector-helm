@@ -1,15 +1,47 @@
 # LDAP Collector Helm Chart
 
-## Current version: 2.0.6 (August 5th, 2024).
+## Current version: 2.1.0 (October 15th, 2024).
 
 ## Installation
 
-Should you need to change/override the configuration of the collector, use the [`values.yaml`](helm/values.yaml) file as template to create your own and upgrade the Helm installation.
+### Using the Helm repository hosted in GitHub Pages
 
-To install the Helm Chart, run the following command at the `./kubernetes` directory:
+First, add the Helm repository:
 
 ```bash
-$ helm install ldap-collector ./helm
+$ helm repo add ldap-collector-helm https://candil-data-fabric.github.io/ldap-collector-helm/
+```
+
+Then, install the Helm Chart:
+
+```bash
+$ helm install ldap-collector ldap-collector-helm/ldap-collector
+```
+
+The chart will be installed using the default values. Use the provided [`values.yaml`](values.yaml) file in this repository as template to upgrade the installation with your desired parameters:
+
+```bash
+$ helm upgrade ldap-collector -f myvalues.yaml
+```
+
+To uninstall the Helm Chart, run the following command:
+
+```bash
+$ helm uninstall ldap-collector
+```
+
+### Cloning this repository
+
+First, clone the repository:
+
+```bash
+$ git clone https://github.com/candil-data-fabric/ldap-collector-helm.git
+```
+
+Once cloned, edit the [`values.yaml`](values.yaml) file to match your deployment needs and run the following command:
+
+```bash
+$ helm install ldap-collector .
 ```
 
 To uninstall the Helm Chart, run the following command:
