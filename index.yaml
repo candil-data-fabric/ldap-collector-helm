@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   ldap-collector:
   - apiVersion: v2
-    appVersion: 2.1.0
-    created: "2024-10-15T07:39:29.115315098Z"
+    appVersion: 2.2.0
+    created: "2024-10-24T09:50:58.125724787Z"
     description: LDAP Collector - Helm Chart
-    digest: ae165f598a56084626a2b261a5a7798342cf5a3b4fbda30b55cecf02df7abeb3
+    digest: fa59bfe2c4bb5346f8393df9cf1d469b76e74d666d76a60d6257766feb8c264c
     maintainers:
     - name: David Martínez García
     name: ldap-collector
@@ -13,6 +13,6 @@ entries:
     - https://github.com/candil-data-fabric/ldap-collector
     type: application
     urls:
-    - https://candil-data-fabric.github.io/ldap-collector-helm/ldap-collector-2.1.0.tgz
-    version: 2.1.0
-generated: "2024-10-15T07:39:29.114034498Z"
+    - https://candil-data-fabric.github.io/ldap-collector-helm/ldap-collector-2.2.0.tgz
+    version: 2.2.0
+generated: "2024-10-24T09:50:58.124512342Z"
