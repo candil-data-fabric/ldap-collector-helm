@@ -1,6 +1,6 @@
 # LDAP Collector Helm Chart
 
-## Current version: 2.2.1 (February 5th, 2025).
+## Current version: 2.2.2 (February 21st, 2025).
 
 ## Installation
 
